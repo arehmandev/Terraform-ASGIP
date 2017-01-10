@@ -1,10 +1,12 @@
 module "extract" {
   source = "./extract"
   ipfile = "Files/iplist.txt"
-# File ASG IPs will be stored
+
+  # File ASG IPs will be stored
 
   asg = "CoreOS-stable-CoreOSServerAutoScale-19N2DDQBHJQA2"
-# Replace with variable of your asg.id
+
+  # Replace with variable of your asg.id
 }
 
 module "certauth" {
