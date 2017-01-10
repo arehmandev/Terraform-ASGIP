@@ -22,6 +22,8 @@ variable "common_name" {
 # names of the pem files generated defined when the module is called and the IP settings for CA
 variable "capem" {}
 
-variable "iplistca" {}
+variable "iplistca" {
+  type = "list"
+}
 
 variable "keypem" {}
