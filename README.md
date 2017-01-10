@@ -2,4 +2,4 @@
 
 This module (extract) was written as a workaround to get the IPs of AWS autoscaling groups.
 
-I have also provided an example of how this is implemented e.g. TLS cert generation
+I have also provided an example of how this is implemented e.g. TLS cert generation, upload to S3 bucket and encryption of object via KMS!
