@@ -27,3 +27,7 @@ variable "iplistca" {
 }
 
 variable "keypem" {}
+
+### S3 bucket
+
+variable "bucketname" {}
