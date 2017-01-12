@@ -16,4 +16,12 @@ DESCRIPTION
 
 variable "certauthbucket" {}
 
+variable "cacertobject" {}
+
+variable "cakeyobject" {}
+
 variable "etcdbucket" {}
+
+variable "etcdcertobject" {}
+
+variable "etcdkeyobject" {}

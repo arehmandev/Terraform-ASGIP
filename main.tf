@@ -20,7 +20,8 @@ module "certauth" {
   keypem     = "certauthkey.pem"
   iplistca   = "${split(",", module.extract.ipcontent)}"
   bucketname = "${var.certauthbucket}"
-  key        = "ca.pem"
+  certobject = "${var.cacertobject}"
+  keyobject  = "${var.cakeyobject}"
 
   # Output ipcontent contains the formatted list of IPs
 }
@@ -33,5 +34,6 @@ module "etcd-ca" {
   ca_cert_pem        = "${module.certauth.ca_cert_pem}"
   ca_private_key_pem = "${module.certauth.ca_private_key_pem}"
   bucketname         = "${var.etcdbucket}"
-  key                = "etcd.pem"
+  certobject         = "${var.etcdcertobject}"
+  keyobject          = "${var.etcdkeyobject}"
 }
