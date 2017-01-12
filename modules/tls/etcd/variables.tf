@@ -20,4 +20,6 @@ variable "keypem" {}
 
 ### S3 bucket
 
+variable "key" {}
+
 variable "bucketname" {}
