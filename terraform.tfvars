@@ -5,10 +5,10 @@ key_name = "terraform"
 public_key_path = "~/.ssh/id_rsa.pub"
 
 ## S3
-certauthbucket= "abs-certauthbucket"
+certauthbucket= "kubernetes-certauthbucket"
 cacertobject = "ca.pem"
 cakeyobject = "ca-key.pem"
 
-etcdbucket = "abs-etcdbucket"
+etcdbucket = "kubernetes-etcdbucket"
 etcdcertobject = "etcd.pem"
 etcdkeyobject = "etcd-key.pem"

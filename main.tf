@@ -22,6 +22,7 @@ module "certauth" {
   bucketname = "${var.certauthbucket}"
   certobject = "${var.cacertobject}"
   keyobject  = "${var.cakeyobject}"
+  accessarn  = "arn:aws:iam::12312321321:root"           # replace with variable for role arn
 
   # Output ipcontent contains the formatted list of IPs
 }
@@ -36,4 +37,5 @@ module "etcd-ca" {
   bucketname         = "${var.etcdbucket}"
   certobject         = "${var.etcdcertobject}"
   keyobject          = "${var.etcdkeyobject}"
+  accessarn          = "arn:aws:iam::12312321321:root"           # replace with variable for role arn
 }
