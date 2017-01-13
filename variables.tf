@@ -25,3 +25,5 @@ variable "etcdbucket" {}
 variable "etcdcertobject" {}
 
 variable "etcdkeyobject" {}
+
+variable "rootarn" {}
