@@ -1,4 +1,7 @@
 resource "null_resource" "iplist" {
+  triggers {
+    always = "${uuid()}"
+  }
   provisioner "local-exec" {
     command = "bash ${path.module}/Files/asgip.sh ${var.asg} > ${path.module}/${var.ipfile}"
   }
